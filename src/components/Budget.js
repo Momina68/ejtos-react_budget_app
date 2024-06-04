@@ -12,11 +12,11 @@ const Remaining = () => {
                 required='required'
                 type='number'
                 id='budget'
+                step={10}
                 value={total}
-                style={{size: 10}}
+                style={{size: '5'}}
                 onChange={(event) => setTotal(event.target.value)}
-                onBlur = {()=> dispatch({ type: 'SET_BUDGET', payload: {  budget: parseInt(total),
-                }})}>
+                onBlur = {()=> dispatch({ type: 'SET_BUDGET', payload: parseInt(total)})}>
                 </input>
         </div>
     );

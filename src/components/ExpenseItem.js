@@ -9,6 +9,7 @@ const ExpenseItem = (props) => {
     const handleAddCost = () => {
         const item = {
             name: props.name,
+            cost: 10
 
         };
 
@@ -21,6 +22,7 @@ const ExpenseItem = (props) => {
     const handleReduceCost = () => {
         const item = {
             name: props.name,
+            cost: 10
         };
 
         dispatch({
@@ -33,7 +35,7 @@ const ExpenseItem = (props) => {
     return (
         <tr>
         <td>{props.name}</td>
-        <td>{props.quantity}</td>
+        <td>{props.currency} {props.quantity}</td>
         <td><IoIosAddCircle size='2.2em' color="green" onClick={handleAddCost}></IoIosAddCircle></td>
         <td><FaMinusCircle size='2.2em' color="red" onClick={handleReduceCost}></FaMinusCircle></td>
         </tr>

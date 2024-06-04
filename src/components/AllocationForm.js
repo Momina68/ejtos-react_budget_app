@@ -14,7 +14,7 @@ const ItemSelected = (props) => {
 
         const item = {
             name: name,
-            const: parseInt(quantity),
+            cost: parseInt(quantity),
         };
 
         if(action === "Reduce") {
@@ -33,7 +33,7 @@ const ItemSelected = (props) => {
     return (
         <div>
             <div className='row'>
-
+            <h3 className='mt-3'>Change Allocation</h3>
             <div className="input-group mb-3" style={{ marginLeft: '2rem' }}>
                     <div className="input-group-prepend">
                 <label className="input-group-text" htmlFor="inputGroupSelect01">Department</label>
