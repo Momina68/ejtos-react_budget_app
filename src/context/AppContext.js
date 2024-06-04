@@ -58,6 +58,7 @@ export const AppReducer = (state, action) => {
                 budget
             };
         case 'SET_BUDGET':
+            debugger
             action.type = "DONE";
             state.budget = action.payload;
 
